@@ -1,4 +1,3 @@
-import Photo from '@/components/Photo';
 import Socials from '@/components/Socials';
 import Stats from '@/components/Stats';
 import { Button } from '@/components/ui/button';
@@ -10,20 +9,20 @@ const Home = () => {
     <main className='h-full'>
       <section className="container mx-auto h-full">
         <div className='flex flex-col-reverse lg:flex-row items-center justify-between lg:pt-8 lg:pb-24'>
-          <article className='text-center lg:text-left'>
-            <span className='text-xl'>
-              Software Developer
-            </span>
-            <h1 className='h1'>
-              Hello I'm <br />
-              <span className='text-accent'>
-                Mohamed Aashir
-              </span>
+          <article className='text-center w-full flex flex-col gap-4 items-center'>
+            <h3 className='lg:text-2xl text-md'>
+              Hello Everyone 👋
+            </h3>
+            <h1 className='gradient-heading h1'>
+              Mohamed Aashir
             </h1>
-            <p className='max-w-[500px] mb-9 text-[gray] dark:text-white/80'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ut consectetur, suscipit alias porro veniam.
+            <span className='lg:text-xl text-[10px] text-[gray]'>
+              Software Engineer | Student | Fullstack Developer
+            </span>
+            <p className='max-w-[500px] text-sm mx-auto mb-9 text-[gray] dark:text-white/80'>
+              Developer with a strong passion for creating innovative and user-friendly applications. Actively seeking opportunities to apply my skills in a professional setting.
             </p>
-            <div className='flex flex-col lg:flex-row items-center gap-8'>
+            <div className='flex flex-col items-center gap-8 w-full'>
               <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
                 <span>
                   Download CV
@@ -35,15 +34,10 @@ const Home = () => {
               </aside>
             </div>
           </article>
-          <aside className='mb-8 lg:mb-0'>
-            <Photo />
-          </aside>
         </div>
       </section>
-      <section className='pt-4 pb-12 xl:pt-0 xl:pb-0'>
-        <div className="container mx-auto">
+      <section className='w-full px-12'>
           <Stats />
-        </div>
       </section>
     </main>
   )
